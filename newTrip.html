@@ -12,17 +12,17 @@
   <body>
     <h1> Trip Creator </h1>
     <div class="container">
-  <div class="row">
+      
     <div class="col-sm-4">
-      Content of the left column.
+      <div id="myDynamicTable"></div>
     </div>
-    <div class="col-sm-8">
-      Content of the right column.
+    <div class="col-sm-8 span5 fill" >
+      <div id="map"></div>
+      <input id="pac-input" class="controls" type="text" placeholder="Search Box">
     </div>
   </div>
 </div>
-    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-    <div id="map"></div>
+   
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsWh23qeSDn2Sm7xcRClCHvgxy16B4VV4&libraries=places&callback=initAutocomplete"
          async defer></script>
@@ -30,6 +30,6 @@
     <script src = "js/maps.js"></script>
     <script src = "https://code.jquery.com/jquery.js"></script>
     <script src = "js/bootstrap.min.js"></script>
-    
+
   </body>
 </html>
